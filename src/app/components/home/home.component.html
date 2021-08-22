@@ -1,0 +1,19 @@
+<p>home works!</p>
+<app-content-list></app-content-list>
+
+<div [ngClass]="'class0 class1'">ngClass example 1</div>
+<div [ngClass]="['class0', 'class2']">ngClass example 2</div>
+<div [ngClass]="{'class3':true}">ngClass example 3</div>
+<div [ngClass]="'class0 class4'">ngClass example 4</div>
+<div [ngClass]="{'class0 class5':3==3}">ngClass example 5</div>
+
+<div [ngStyle]="{'font-weight':'bold','height':'40px'}">ngStyle example 1</div>
+<div [ngStyle]="{'font-weight':'bold','height.px':100}">ngStyle example 1</div>
+
+<ul>
+  <li *ngFor="let x of users">
+    <div *ngIf="x.age<36">
+      {{x.name}}
+    </div>
+  </li>
+</ul>
